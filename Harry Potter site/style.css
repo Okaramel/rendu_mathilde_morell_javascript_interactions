@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+}
+
+
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-image: url("../Harry Potter site/image/fond\ d\'écran.png"), url("../Harry Potter site/image/fond\ décran\ deux.png");
+    background-position: top center, bottom center;
+    background-size: none, none;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: scroll;
+    text-decoration: none, none;
+    font-family: 'Vidaloka', serif;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.harrypotterhistoire h1{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.harrypotterhistoire h3{
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.harrypotterhistoire p {
+    color: white;
+    margin-left: 2%;
+  margin-right: 2%;
+  margin: 2%;
+}
+
+footer{
+    background-color: black;
+}
+footer p{
+    color: white;
+}
+
+
+
+
+.maison1et2 {
+    display: flex;
+    align-items: center;
+}
+
+.Gryffondor {
+    display: flex;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.gryffondorexp {
+    color: white;
+}
+
+.Serpentard {
+    display: flex;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.serpentardexp {
+    color: white;
+}
+
+
+
+.maison3et4 {
+    display: flex;
+    align-items: center;
+}
+
+.Poufsouffle {
+    display: flex;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.poufexp {
+    color: white;
+}
+
+.Serdaigle {
+    display: flex;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.serexp {
+    color: white;
+}
+
+
+.Personnage {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 5%;
+}
+
+.Harry {
+    display: flex;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.Ron {
+    display: flex;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.Hermione {
+    display: flex;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.descriptionhp {
+    color: white;
+}
+
+.descriptionrw {
+    color: white;
+}
+
+.descriptionhg {
+    color: white;
+}
+
+.goldentrio {
+    display: flex;
+    align-items: center;
+}
