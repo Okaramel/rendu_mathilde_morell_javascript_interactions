@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <img src="http://clipart-library.com/images_k/harry-potter-logo-transparent-background/harry-potter-logo-transparent-background-11.png" alt="HarryPotter" width="200">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="page2.html">Maison</a></li>
+                <li><a href="page3.html">Personnage</a></li>
+                <li><a href="page4.html">Candidature</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="message-error">
+            <ul></ul>
+        </div>
+    
+        <div class="message-success">
+            Formulaire envoyé avec succès !
+        </div>
+    
+        <form action="" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="pseudo">Pseudo</label>
+                <input type="text" name="pseudo" id="pseudo">
+            </div>
+    
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+    
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" id="password">
+            </div>
+    
+            <div>
+                <label for="password2">Confirmation du mot de passe</label>
+                <input type="password" name="password" id="password2">
+            </div>
+    
+            <div id="container">
+                <label for="terminal">Terminal</label>
+                <input type="radio" id="terminal" name="terminal" value="option1">
+            
+                <label for="Seconde">Seconde</label>
+                <input type="radio" id="seconde" name="seconde" value="option2">
+            
+                <label for="Premiere">Première</label>
+                <input type="radio" id="Premiere" name="Premiere" value="option3">
+    
+                <label for="troisieme">Troisième</label>
+                <input type="radio" id="troisieme" name="troisieme" value="option4">
+              </div>
+
+              <div id="conteneur">
+                <select id="selectButton">
+                  <option value="1">Axe Sortilège</option>
+                  <option value="2">Axe Potion</option>
+                  <option value="3">Axe Soins aux créatures magiques</option>
+                </select>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+
+    
+        <script src="main.js"></script>
+    </main>
