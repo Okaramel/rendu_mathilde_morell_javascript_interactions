@@ -6,8 +6,6 @@
     box-sizing: border-box;
 }
 
-
-
 ul{
     list-style-type: none;
     margin: 0;
@@ -24,22 +22,21 @@ nav {
     width: 100%;
 }
 
-
-
-
-
 a {
     color: white;
     text-decoration: none;
 }
 
+a:hover{
+    color: goldenrod;
+    transition: 0.3s;
+}
+
 body {
-    background-image: url("../Harry Potter site/image/fond\ d\'écran.png"), url("../Harry Potter site/image/fond\ décran\ deux.png");
-    background-position: top center, bottom center;
-    background-size: none, none;
-    background-repeat: no-repeat, no-repeat;
-    background-attachment: scroll;
-    text-decoration: none, none;
+    background-image: url("../Harry Potter site/image/fond\ d\'écran.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: 'Vidaloka', serif;
     margin: 0;
 }
@@ -76,9 +73,6 @@ footer{
 footer p{
     color: white;
 }
-
-
-
 
 .maison1et2 {
     display: flex;
@@ -173,4 +167,226 @@ footer p{
 .goldentrio {
     display: flex;
     align-items: center;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 100px;
+}
+  
+.swiper-slide {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 18px;
+    padding-left: 100px;
+}
+  
+.title {
+    font-weight: bold;
+    font-size: 72px;
+    letter-spacing: 3px;
+    color: white;
+}
+  
+.subtitle {
+    letter-spacing: 3px;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.slide-potion {
+    background-image: url('https://vignette.wikia.nocookie.net/harrypotter/images/a/a3/Cours_de_potions.jpg/revision/latest/scale-to-width-down/2000?cb=20091021135144&path-prefix=fr');
+    background-size: cover;
+    margin-top: 100px;
+}
+  
+.slide-botanique {
+    background-image: url('https://static.actugaming.net/media/2023/02/hogwarts-legacy-quete-cours-botanique-3.jpg');
+    background-size: cover;
+    margin-top: 100px;
+}
+  
+.slide-sort {
+    background-image: url('https://media.harrypotterfanzone.com/dumbledore-fights-in-the-ministry.jpg');
+    background-size: cover;
+    margin-top: 100px;
+}
+  
+.tabs {
+    display: flex;
+    list-style-type: none;
+    margin-top: 100px;
+    overflow: hidden;
+}
+  
+.tab {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+  
+.tab-active {
+    background-color: goldenrod;
+    backdrop-filter: blur(15px);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab:hover {
+    background-color: #4b4949;
+}
+
+.content{
+    display: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 100px;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+  
+.active{
+    display: block;
+}
+
+form {
+    border: 1px solid rgba(153, 153, 153, 0.6);
+    color: white;
+    margin-top: 80px;
+}
+
+form > div {
+    margin: 30px 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    height:20px ;
+    width: 40%;
+}
+
+button {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding: 10px 32px;
+    cursor: pointer
+}
+
+.message-error {
+    border: 1px solid rgb(212, 42, 0);
+    color: rgb(0, 0, 0);
+    background-color: rgba(212, 42, 0, 0.4);
+    padding: 16px 32px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.message-error.visible{
+    display: block;
+}
+
+.message-success.visible{
+    display: block;
+}
+
+.message-success {
+    border: 1px solid rgb(81, 150, 2);
+    color: rgb(0, 0, 0);
+    background-color: rgba(81, 150, 2, 0.4);
+    padding: 16px 32px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.success {
+    border: 1px solid rgb(81, 158, 2);
+    background-color: rgba(113, 212, 0, 0.4);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    text-align: center;
+    padding-top: 50px;
+}
+  
+h4 {
+    color: white;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(26px);
 }

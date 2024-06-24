@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
+    
     <header>
         <img src="http://clipart-library.com/images_k/harry-potter-logo-transparent-background/harry-potter-logo-transparent-background-11.png" alt="HarryPotter" width="200">
         <nav>
@@ -15,11 +17,64 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="page2.html">Maison</a></li>
                 <li><a href="page3.html">Personnage</a></li>
+                <li><a href="page4.html">Candidature</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <div class="swiper mon-slider">
+
+            <div class="swiper-wrapper">
+    
+              <div class="swiper-slide slide-potion">
+                <p class="subtitle">Journée Porte Ouverte de Poudlard</p>
+                <p class="title">Atelier de création de potion</p>
+              </div>
+    
+              <div class="swiper-slide slide-botanique">
+                <p class="subtitle">Journée Porte Ouverte de Poudlard</p>
+                <p class="title">Atelier Botanique</p>
+              </div>
+    
+              <div class="swiper-slide slide-sort">
+                <p class="subtitle">Journée Porte Ouverte de Poudlard</p>
+                <p class="title">Atelier Sortilège</p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+      
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+      
+            <div class="swiper-scrollbar"></div>
+          </div>
+
+          <h1>Les axes métiers</h1>
+          <div class="tabs">
+            <ul>
+              <li class="tab tab-auror tab-active">Les Aurors</li>
+              <li class="tab tab-garde">Les garde-chasse de Poudlard</li>
+              <li class="tab tab-langue">Les Langue-De-Plomb</li>
+              <li class="tab tab-magizoo">Les Magizoologistes</li>
+            </ul>
+    
+            <div class="contenu">
+              <div class="content auror active">
+                Un Auror est un membre d'une élite spéciale du ministère de la Magie ou de tout autre gouvernement magique comme le Congrès magique des États-Unis d'Amérique dont le rôle est de retrouver et d'emprisonner les mages noirs.</div>
+              <div class="content garde">
+                Le garde-chasse de Poudlard ou Gardien des Lieux est le titre détenu par l'un membre du personnel de l'école de sorcellerie Poudlard qui est chargé d'entretenir et de s'occuper du terrain de l'établissement.
+              </div>
+              <div class="content langue">
+                Une Langue-de-plomb est un sorcier travaillant au Département des mystères. Les activités menées par les Langues-de-plomb sont secrètes, c'est pourquoi on les surnomme ainsi.
+              </div>
+              <div class="content magizoo">
+                La Magizoologie est l'étude des créatures magiques. Les sorciers et sorcières pratiquant ce métier sont appelés magizoologistes.
+              </div>
+            </div>
+          </div>
+
+
         <div class="harrypotterhistoire">
             <h1>Synopsis</h1>
 
@@ -60,7 +115,15 @@
         <a href="https://fr.wikipedia.org/wiki/Harry_Potter">Pour voir la source utilisée, clickez ici (source fiable...).
         </a>
         </p>
+        <div id="contain">
+            <h4 class="dark">Modifier le mode</h4>
+            <label class="switch">
+              <input type="checkbox" id="DarkMode">
+              <span class="slider round"></span>
+            </label>
+          </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
